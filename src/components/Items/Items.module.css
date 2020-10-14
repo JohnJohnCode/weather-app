@@ -109,3 +109,8 @@
     grid-row-gap: 5.3rem;
   }
 }
+@media (max-height: 640px) {
+  .Parent {
+    grid-row-gap: 0;
+  }
+}

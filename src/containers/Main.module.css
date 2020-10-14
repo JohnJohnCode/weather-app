@@ -14,9 +14,10 @@
   color: #333333;
   left: 0;
   right: 0;
-  bottom: 5rem;
-  padding-top: 4.1rem;
+  bottom: 0;
+  top: 0;
   width: fit-content;
+  height: fit-content;
   margin: auto;
   font-family: "Open Sans Condensed", sans-serif;
 }
@@ -77,7 +78,14 @@
   .TitleCont {
     height: 17%;
   }
-  .Title {
-    bottom: 4rem;
-  }
 }
+@media (max-height: 480px) {
+  .Title, .TitleCont {
+    visibility: hidden;
+  }
+} 
+@media (max-height: 635px) and (min-width: 600px) {
+  .Title, .TitleCont {
+    visibility: hidden;
+  }
+} 

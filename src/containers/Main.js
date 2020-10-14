@@ -40,7 +40,7 @@ const Main = () => {
       setError(false);
       setFetching(true);
       const response = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=f23a7c3fafed4d23af1141842201110&q=${loc}`
+        `https://api.weatherapi.com/v1/current.json?key=f23a7c3fafed4d23af1141842201110&q=${loc}`
       );
       const user = await response.json();
       if (response.status !== 200) {

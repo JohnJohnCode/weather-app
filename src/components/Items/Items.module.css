@@ -1,0 +1,111 @@
+.Parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1.6fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  margin: 12rem auto;
+  width: 80%;
+  height: 40%;
+  text-align: center;
+  color: #333333;
+}
+
+.Icon {
+  width: 45px;
+  height: 45px;
+}
+
+.Div1, .Div2, .Div3, .Div4,
+.Div5, .Div6, .Div7, .Div8,
+.Div9, .Div10, .Div11 {
+  text-align: center;
+  margin: auto;
+}
+
+.Div4, .Div5, .Div6, .Div7,
+.Div8, .Div9, .Div11 {
+  white-space: nowrap;
+}
+
+.Div1 {
+  grid-area: 1 / 2 / 2 / 4;
+  text-align: center;
+}
+.Div2 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.Div3 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.Div4 {
+  grid-area: 2 / 1 / 4 / 2;
+  grid-column-gap: 6px;
+}
+.Div5 {
+  grid-area: 2 / 2 / 4 / 3;
+  grid-column-gap: 6px;
+}
+.Div6 {
+  grid-area: 2 / 3 / 4 / 4;
+  grid-column-gap: 6px;
+}
+.Div7 {
+  grid-area: 2 / 4 / 4 / 5;
+}
+.Div8 {
+  grid-area: 4 / 1 / 6 / 2;
+}
+.Div9 {
+  grid-area: 4 / 2 / 6 / 3;
+}
+.Div10 {
+  grid-area: 4 / 3 / 6 / 4;
+}
+.Div11 {
+  grid-area: 4 / 4 / 6 / 5;
+}
+
+.Title {
+  font-size: 0.8rem;
+}
+
+.Bold {
+  font-weight: 500;
+}
+
+.Big {
+  font-size: 1.3rem;
+}
+
+@media (min-width: 600px) {
+  .Parent {
+    margin-top: 15rem;
+    grid-column-gap: 0;
+    /*;*/
+    width: 65%;
+  }
+  .Title {
+    font-size: 1.2rem;
+  }
+  .Big {
+    font-size: 1.7rem;
+  }
+  .Bold {
+    font-size: 1.5rem;
+  }
+  .Icon {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+@media (max-width: 1190px) {
+  .Parent {
+    grid-row-gap: 2rem;
+  }
+}
+@media (min-width: 1191px) {
+  .Parent {
+    grid-row-gap: 5.3rem;
+  }
+}

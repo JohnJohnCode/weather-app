@@ -1,0 +1,83 @@
+.Switch {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: fit-content;
+  font-size: 1.2rem;
+}
+
+.Title {
+  position: absolute;
+  z-index: 1;
+  color: #333333;
+  left: 0;
+  right: 0;
+  bottom: 5rem;
+  padding-top: 4.1rem;
+  width: fit-content;
+  margin: auto;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.TitleCont {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 21%;
+  width: 70%;
+  border-top: 1px solid #bfbfbf;
+}
+
+.InputCont {
+  margin: auto auto auto auto;
+  position: relative;
+  width: 70%;
+  height: fit-content;
+  text-align: center;
+  display: block;
+  border-bottom: 3px solid #bfbfbf;
+}
+
+.InputCont:hover,
+.InputCont:focus {
+  border-bottom: 3px solid #333333;
+}
+
+.Icon {
+  display: inline-block;
+  position: absolute;
+  right: 2%;
+  color: #bfbfbf;
+  bottom: 13%;
+  font-size: 1.3rem;
+}
+
+.Icon:hover {
+  color: #333333;
+}
+
+@media (min-width: 600px) {
+  .InputCont {
+    width: 30%;
+  }
+  .Switch {
+    top: 7.2rem;
+  }
+}
+@media (max-width: 1190px) {
+  .TitleCont {
+    height: 20%;
+  }
+}
+@media (min-width: 1191px) {
+  .TitleCont {
+    height: 17%;
+  }
+  .Title {
+    bottom: 4rem;
+  }
+}

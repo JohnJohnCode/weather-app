@@ -1,0 +1,23 @@
+.Search {
+  margin: auto;
+  background-color: transparent;
+  width: 85%;
+  height: 50%;
+  padding: 0 2rem 0 0;
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #333333;
+}
+
+.Search:focus,
+.Search:hover {
+  outline: none;
+}
+
+@media (min-width: 600px) {
+  .Search {
+    padding: 0 4.4rem 0 0;
+    font-size: 1.6rem;
+  }
+}

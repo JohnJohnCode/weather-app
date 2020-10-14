@@ -1,0 +1,64 @@
+.Btn {
+  border: 3px solid #333333;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  transition: background 600ms ease, color 600ms ease;
+}
+.Btn,
+.Btn:focus,
+input[type="radio"].Toggle,
+input[type="radio"].Toggle:focus,
+label,
+label:focus,
+input[type="radio"].Toggle.Toggleleft,
+input[type="radio"].Toggle.Toggleleft:focus,
+input[type="radio"].Toggle.Toggleright,
+input[type="radio"].Toggle.Toggleright:focus {
+  outline: none;
+  user-select: none;
+  font-size: 1.2rem;
+}
+input[type="radio"].Toggle {
+  display: none;
+}
+input[type="radio"].Toggle + label {
+  cursor: pointer;
+  min-width: 40px;
+  max-height: 90%;
+}
+input[type="radio"].Toggle + label:hover {
+  background: none;
+  color: #333333;
+}
+input[type="radio"].Toggle + label:after {
+  background: #333333;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
+  width: 100%;
+  z-index: -1;
+}
+input[type="radio"].Toggle.Toggleleft + label {
+  border-right: 0;
+}
+input[type="radio"].Toggle.Toggleleft + label:after {
+  left: 100%;
+}
+input[type="radio"].Toggle.Toggleright + label {
+  margin-left: -5px;
+}
+input[type="radio"].Toggle.Toggleright + label:after {
+  left: -100%;
+}
+input[type="radio"].Toggle:checked + label {
+  cursor: default;
+  color: #fff;
+  transition: color 200ms;
+}
+input[type="radio"].Toggle:checked + label:after {
+  left: 0;
+}

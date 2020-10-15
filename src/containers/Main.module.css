@@ -9,20 +9,16 @@
 }
 
 .Title {
-  position: absolute;
   z-index: 1;
   color: #333333;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  width: fit-content;
-  height: fit-content;
   margin: auto;
   font-family: "Open Sans Condensed", sans-serif;
 }
 
 .TitleCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   bottom: 0;
   left: 0;

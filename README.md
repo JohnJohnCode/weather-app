@@ -1,6 +1,6 @@
 # Weather App
 
-In this project I have a go at making a website that displays weather information on the city of your choice. The goal of this project was to further my skills in working with APIs and React.
+In [this project](https://johnjohncode.github.io/weather-app/) I have a go at making a website that displays weather information on the city of your choice. The goal of this project was to further my skills in working with APIs and React.
 
 ## Tech Stack
 
